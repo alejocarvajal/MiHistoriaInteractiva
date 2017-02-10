@@ -33,10 +33,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:text="Ingrese su nombre"
         android:ems="10"
         android:layout_above="@+id/botonInicio"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:id="@+id/editText" />
+        android:id="@+id/NombreeditText"
+        android:hint="Escribe tu nombre para empezar"
+        android:maxLength="30" />
 </RelativeLayout>
