@@ -1,5 +1,6 @@
 package com.cerok.mihistoriainteractiva;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -20,8 +21,13 @@ public class ActividadPrincipal extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String nombre = mCampoNombre.getText().toString();
-                Toast.makeText(ActividadPrincipal.this,nombre,Toast.LENGTH_LONG).show();
+                iniciarHistoria(nombre);
             }
         });
+    }
+    private void iniciarHistoria(String nombre){
+        Intent intento = new Intent(this,ActividadHistoria.class);
+        intento.putExtra(getString(R.string.llave_nombre),nombre);
+        startActivity(intento);
     }
 }

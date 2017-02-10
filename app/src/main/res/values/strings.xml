@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Mi Historia Interactiva</string>
+    <string name="llave_nombre">nombre</string>
 </resources>
