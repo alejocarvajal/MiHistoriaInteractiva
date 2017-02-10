@@ -5,7 +5,7 @@
     android:id="@+id/activity_actividad_principal"
     android:layout_width="match_parent"
 
-    tools:context="com.cerok.mihistoriainteractiva.ActividadPrincipal"
+    tools:context="com.cerok.mihistoriainteractiva.iu.ActividadPrincipal"
     android:layout_height="match_parent">
 
     <ImageView

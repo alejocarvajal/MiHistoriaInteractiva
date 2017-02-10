@@ -1,9 +1,11 @@
-package com.cerok.mihistoriainteractiva;
+package com.cerok.mihistoriainteractiva.iu;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+
+import com.cerok.mihistoriainteractiva.R;
 
 public class ActividadHistoria extends AppCompatActivity {
     public static String TAG = ActividadHistoria.class.getSimpleName();
@@ -17,6 +19,6 @@ public class ActividadHistoria extends AppCompatActivity {
         if(nombre == null){
             nombre = "Amigo";
         }
-        Log.d(TAG,nombre);
+
     }
 }
