@@ -9,6 +9,15 @@ public class Pagina {
     private String mText;
     private Eleccion mEleccion1;
     private Eleccion mEleccion2;
+    private boolean band = false;
+
+    public boolean isBand() {
+        return band;
+    }
+
+    public void setBand(boolean band) {
+        this.band = band;
+    }
 
     public Pagina(int imagenId, String Text, Eleccion Eleccion1, Eleccion Eleccion2){
         mImagenId=imagenId;
@@ -21,6 +30,7 @@ public class Pagina {
         mText=Text;
         mEleccion1=null;
         mEleccion2=null;
+        band = true;
     }
     public int getImagenId() {
         return mImagenId;
@@ -53,4 +63,5 @@ public class Pagina {
     public void setEleccion2(Eleccion eleccion2) {
         mEleccion2 = eleccion2;
     }
+
 }

@@ -1,21 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/actividad_historia"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.cerok.mihistoriainteractiva.iu.ActividadHistoria">
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/actividad_historia"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="com.cerok.mihistoriainteractiva.iu.ActividadHistoria"
+                android:background="@android:color/white">
 
-    <TextView
-        android:text="@string/llave_nombre"
-        android:layout_width="wrap_content"
+    <ImageView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:id="@+id/textoPrueba" />
+        android:id="@+id/imagenHistoria"
+        android:src="@drawable/historiaespacial01"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Su traje está equipado con un mapa y un radar, que utiliza para guiarse sobre la superficie de ese planeta. Después de buscar por un tiempo, sus niveles de energía están empezando a agotarse. El sabe que debe recargar sus baterías, pero hay una luz muy tenue por delante."
+        android:layout_below="@+id/imagenHistoria"
+        android:id="@+id/textoHistoria"
+        android:layout_alignLeft="@+id/imagenHistoria"
+        android:layout_alignRight="@+id/imagenHistoria"
+        android:paddingLeft="30dp"
+        android:paddingTop="15dp"
+        android:paddingRight="30dp"
+        android:lineSpacingMultiplier="1.2"/>
+
+    <Button
+        android:text="CONTINUA TU VIAJE HASTA SU PLANETA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/botonEleccion1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="13dp"
+        android:background="@android:color/white"
+        android:textColor="#3a8aec"
+        style="@style/BotonBlanco"/>
+
+    <Button
+        android:text="PARA E INVESTIGA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/botonEleccion2"
+        android:layout_above="@+id/botonEleccion1"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/white"
+        android:textColor="#3a8aec"
+        style="@style/BotonBlanco"/>
 </RelativeLayout>
